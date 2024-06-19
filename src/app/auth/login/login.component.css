@@ -1,0 +1,82 @@
+.loading-wave {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: linear-gradient(-45deg, #e2e0fc, #cfdef3, #e0eafc, #d6cff3),
+  linear-gradient(45deg, #cfdef3, #d6cff3, #d6cff3, #cfdef3);
+  background-size: 400% 400%;
+  animation: waveAnimation 5s ease infinite;
+}
+
+@keyframes waveAnimation {
+  0% { background-position: 0 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0 50%; }
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2; 
+}
+
+.container {
+  background-color: #fff;
+  width: 400px;
+  padding: 50px 80px;
+  border-radius: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.3rem;
+  margin-bottom: 30px;
+  font-family: 'Franklin Gothic Medium';
+  color: rgb(57, 62, 77);
+}
+
+.form-group {
+  margin-bottom: 20px;
+  color: rgb(57, 62, 77);
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: none; 
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: #aea6fa;
+  color: #fff;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #cdc2fa 0%,#b3d1fa 80%);
+}
+
+.forgot {
+  padding: 30px;
+  font-size: 0.9rem;
+  color: #8e82fa;
+}

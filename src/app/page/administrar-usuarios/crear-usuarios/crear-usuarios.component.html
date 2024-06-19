@@ -1,0 +1,53 @@
+<h2 class="titulo">Crear Usuario</h2>
+
+<form [formGroup]="usuariosForm" (ngSubmit)="crearUsuario()">
+  <div class="contenedor-nombre">
+    <label class="etiqueta-nombre"> Nombre</label>
+    <input type="text" class="form-control" formControlName="nombre" />
+  </div>
+
+  <div class="contenedor-correo">
+    <label class="etiqueta-correo"> Correo Electrónico</label>
+    <input type="text" class="form-control" formControlName="email" />
+  </div>
+  <div class="contenedor-contraseña">
+    <label class="etiqueta-contraseña"> Contraseña</label>
+    <input type="text" class="form-control" formControlName="password" />
+  </div>
+
+  <div class="contenedor-tipo-documento">
+    <label class="etiqueta-tipo-documento"> Tipo de Documento</label>
+    <select class="select-tipo-documento" formControlName="tipoDocumento">
+      <option value="" disabled>Seleccione un tipo de documento</option>
+      <option value="Cédula de Ciudadanía">Cédula de Ciudadanía</option>
+      <option value="Cédula de Extranjería">Cédula de Extranjería</option>
+      <option value="Pasaporte">Pasaporte</option>
+    </select>
+  </div>
+
+  <div class="contenedor-numero-documento">
+    <label class="etiqueta-numero-documento"> Número de Documento</label>
+    <input type="text" class="form-control" formControlName="numeroDocumento" />
+  </div>
+
+  <div class="contenedor-rol">
+    <label class="etiqueta-rol"> Rol</label>
+    <select class="select-rol" formControlName="rol">
+      <option value="" disabled>Seleccione un rol</option>
+      <option value="USER">Usuario</option>
+      <option value="ADMIN">Administrador</option>
+    </select>
+  </div>
+
+  <div class="contenedor-peso">
+    <label class="etiqueta-peso"> Peso</label>
+    <input type="string" class="form-control" formControlName="peso" />
+  </div>
+
+  <div class="contenedor-fecha-nacimiento">
+    <label class="etiqueta-fecha-nacimiento"> Fecha de Nacimiento</label>
+    <input type="date" class="control-fecha" formControlName="fechaNacimiento" />
+  </div>
+  <br>
+  <button type="submit" class="boton-crear">Crear Usuario</button>
+</form>

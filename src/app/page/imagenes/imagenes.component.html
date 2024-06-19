@@ -1,0 +1,22 @@
+<h4 class="titulo">CATÁLOGO</h4>
+<div class="container">
+  <div class="container" *ngFor="let producto of productos">
+      <div class="card "  (click)="selectedCard(producto._id)">
+          <img [src]="base_url + '/' + producto.imagenPath">
+        <div class="coninfo">
+          <div class="info-card-nombre">
+              <h5>{{producto.nombre}}</h5>
+          </div>
+          <div class="info-card-sku">
+            <p>SKU: {{producto.sku}}</p>
+          </div>
+          <div class="info-card-talla">
+            <p>Talla: {{producto.talla}}</p>
+          </div>
+          <div class="info-card-precio">
+              <p>$ {{producto.precio}}</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+
+form {
+  background: #f9f9f9; 
+  padding: 20px;
+  border-radius: 8px; 
+  box-shadow: 0 8px 12px #e9e7fc; 
+  max-width: 500px; 
+  margin: auto;
+}
+
+.form-control,
+.select-tipo-documento,
+.select-rol {
+  width: 100%;
+  box-sizing: border-box; 
+  border-radius: 4px; 
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 15px; 
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+.boton-crear {
+  background-color: #d6cff3;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block; 
+  margin: 20px auto; 
+}
+
+.boton-crear:hover {
+  background: linear-gradient(-45deg, #e2e0fc, #cfdef3, #e0eafc, #d6cff3),
+    linear-gradient(45deg, #cfdef3, #d6cff3, #d6cff3, #cfdef3);
+}
+
+
+.titulo {
+    text-align: center;
+    color: #7d72e0;
+    margin-bottom: 20px;
+}

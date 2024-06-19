@@ -1,0 +1,21 @@
+<div>
+
+    <div class="contTabla">
+      <app-tabla
+      [data]="usuarios"
+      [titulo]="'Lista de usuarios'"
+      [columnas]="columnas"
+      (onInformacion)="recibirInformacion($event)"
+      (onEditar)="editarUsuario($event)"
+      (onEliminar)="eliminarUsuario($event)"
+    ></app-tabla>
+  </div>
+  <div class="contenedorBoton">
+    <button
+      class="Crear"
+      (click)="irAcrearUsuarios()"
+      *appRol="['ADMIN']">
+      Crear Usuarios
+    </button>
+  </div>
+</div>

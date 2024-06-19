@@ -1,0 +1,93 @@
+.tituloTabla {
+  color: #a19afd;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1em 0;
+  caption-side: top;
+  border: 1px solid #b8afec;
+}
+.tabla thead{
+  background-color: #e2e0ff;
+}
+.tabla tr:hover {
+    background-color: #efeeff;
+  }
+.tabla th,
+.tabla td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+@media screen and (max-width: 600px) {
+  .tabla {
+    border: 0;
+  }
+
+  .tabla thead{
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .tabla tr {
+    border-bottom: 3px solid #e2e8f0;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+
+  .tabla td {
+    border-bottom: 1px solid #e2e8f0;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  .tabla td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .tabla td:last-child {
+    border-bottom: 0;
+  }
+
+}
+
+.botonInfo,
+.botonEditar,
+.botonEliminar {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.botonInfo {
+  background-color: #4299e1;
+  color: white;
+}
+
+.botonEditar {
+  background-color: #48bb78;
+  color: white;
+}
+
+.botonEliminar {
+  background-color: #e53e3e;
+  color: white;
+}

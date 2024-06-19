@@ -1,0 +1,14 @@
+<div class="contTabla">
+    <app-tabla
+    [columnas]="columnas"
+    [data]="misProductos"
+    [titulo]="titulo"
+    (onInformacion)="recibirInformacion($event)"
+    (onEliminar)="eliminar($event)"
+  ></app-tabla>
+</div>
+<div class="contenedorBoton">
+<button class="Crear" (click)="crearProductos()" *appRol="['ADMIN']">
+  Crear producto
+</button>
+</div>

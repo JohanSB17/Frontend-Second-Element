@@ -1,0 +1,15 @@
+export enum PATH {
+  ARTICULO = 'articulo',
+  ACERCADE = 'acercade',
+  CONTACTO = 'contacto',
+  CREAR_PRODUCTOS = 'crear-productos',
+  CREAR_USUARIOS = 'crear-usuarios',
+  HOME = '',
+  IMAGEN = 'imagen',
+  INICIO = 'inicio',
+  LOGIN = 'login',
+  NOMBRE = 'nombre',
+  PERSONA = 'persona',
+  PRODUCTOS = 'productos',
+  USUARIO = 'usuario',
+}

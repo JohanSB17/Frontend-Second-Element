@@ -1,0 +1,28 @@
+/*Color #e2e0ff*/
+.Crear {
+  background-color: #e2e0ff;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.Crear:hover {
+  background: linear-gradient(-45deg, #e2e0fc, #cfdef3, #e0eafc, #d6cff3),
+    linear-gradient(45deg, #cfdef3, #d6cff3, #d6cff3, #cfdef3);
+}
+.contenedorBoton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contTabla{
+  overflow: auto;
+}
